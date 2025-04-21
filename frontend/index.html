@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notas DevOps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cuaderno">
+    <h1>📒 Notas DevOps</h1>
+    <div class="input-container">
+      <input type="text" id="noteInput" placeholder="Escribe una nota..." />
+      <button onclick="addNote()">Agregar</button>
+    </div>
+    <ul id="listaNotas"></ul>
+  </div>
+
+  <script>
+    function agregarNota() {
+      const notaInput = document.getElementById("nota");
+      const texto = notaInput.value.trim();
+      if (texto !== "") {
+        const li = document.createElement("li");
+        li.textContent = texto;
+        document.getElementById("listaNotas").appendChild(li);
+        notaInput.value = "";
+      }
+    }
+  </script>
+  <ul id="notesList"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
