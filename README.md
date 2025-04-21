@@ -27,4 +27,4 @@ docker-compose up --build
 - Corre pruebas unitarias automáticamente al hacer `push` en `main`
 
 ## Autores
-- Anderson y equipo
+- Anderson 
